@@ -1,9 +1,18 @@
-pandas
-numpy
-scikit-learn
-joblib
-xgboost
-shap
-matplotlib
-fastapi
-uvicorn
+# Core ML
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+xgboost==2.0.3
+joblib==1.4.2
+
+# Explainability
+shap==0.45.1
+matplotlib==3.8.4
+
+# API
+fastapi==0.111.0
+uvicorn==0.30.1
+pydantic==2.7.1
+
+# Utils
+python-dotenv==1.0.1

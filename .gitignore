@@ -3,3 +3,10 @@
 
 #Venv
 .venv/
+
+#Cache
+app/__pycache__/
+__pycache__/
+app/ml/__pycache__/
+app/schemas/__pycache__/
+app/services/__pycache__/
