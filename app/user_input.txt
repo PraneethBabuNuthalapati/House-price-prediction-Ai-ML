@@ -1,0 +1,9 @@
+{
+  "zip_code": 10001,
+  "state": "NY",
+  "sqft": 1800,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "year_built": 2005,
+  "quality": 7
+}
