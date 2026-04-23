@@ -2,3 +2,15 @@ pip install -r requirements.txt
 python app/ml/train.py
 python app/ml/train_real.py
 uvicorn app.main:app --reload
+
+
+Sample User Input:
+{
+  "zip_code": 10001,
+  "state": "NY",
+  "sqft": 1800,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "year_built": 2005,
+  "quality": 7
+}

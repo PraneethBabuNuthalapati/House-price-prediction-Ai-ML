@@ -72,6 +72,8 @@ def build_preprocessor(df):
 #TRAIN MODEL
 
 def train():
+    os.makedirs("artifacts", exist_ok=True)
+
     df = load_data()
     df = feature_engineering(df)
     
@@ -118,8 +120,6 @@ def train():
     
     print(f"✅ Validation RMSE: {rmse:.2f}")
     print(f"✅ R2 Score: {r2:.4f}")
-
-    os.makedirs("artifacts", exist_ok=True)
 
     joblib.dump(best_model, MODEL_PATH)
 

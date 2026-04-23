@@ -12,8 +12,11 @@ def run_agent(req, query: str):
         "final_price": result["prediction"]["final_price"]
     }
     
-    if "explaination" in result:
-        response["top_factors"] = result["explaination"].get("top_factors", [])
-        response["explaination"] = result["explaination"].get("explaination", "")
+    explanation_block = result.get("explanation")
+    
+    if explanation_block:
+        response["top_factors"] = explanation_block.get("top_factors", [])
+        response["explanation"] = explanation_block.get("explanation", "")
         
+    print("Agent response:", response)
     return response

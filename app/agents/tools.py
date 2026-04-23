@@ -1,7 +1,7 @@
 from app.services.mapper import map_to_model_input
 from app.ml.predict_hybrid import feature_engineering, align_input
 from app.ml.shap_explainer import get_shap_values, geta_top_features
-from app.services.llm_explainer import generate_explaination
+from app.services.llm_explainer import generate_explanation
 
 import joblib
 import pandas as pd
@@ -37,9 +37,9 @@ def explain_tool(df):
     shap_values, feature_names = get_shap_values(df)
     top_features = geta_top_features(shap_values, feature_names)
     
-    explaination = generate_explaination(top_features)
+    explanation = generate_explanation(top_features)
     
     return {
         "top_factors": top_features,
-        "explaination": explaination
+        "explanation": explanation
     }

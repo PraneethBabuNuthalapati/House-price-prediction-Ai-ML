@@ -6,7 +6,7 @@ load_dotenv()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-def generate_explaination(top_features):
+def generate_explanation(top_features):
     if not top_features:
         return "The model did not identify strong feature impacts for this prediction."
 

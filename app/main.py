@@ -6,7 +6,7 @@ from app.schemas.request import HouseRequest
 from app.services.mapper import map_to_model_input
 from app.ml.predict_hybrid import feature_engineering, align_input
 from app.ml.shap_explainer import get_shap_values, geta_top_features
-from app.services.llm_explainer import generate_explaination
+from app.services.llm_explainer import generate_explanation
 # from app.agents.price_agent import run_agent
 from app.agents.run_agent import run_agent
 

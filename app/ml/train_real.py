@@ -57,6 +57,8 @@ def build_pipeline():
     return pipeline
 
 def train():
+    os.makedirs("artifacts", exist_ok=True)
+
     df = load_data()
     
     X = df.drop(columns=["LatestPrice"])
@@ -80,7 +82,6 @@ def train():
     print(f"✅ Validation RMSE: {rmse:.2f}")
     print(f"✅ Validation R2: {r2:.2f}")
     
-    os.makedirs("artifacts", exist_ok=True)
     joblib.dump(pipeline, MODEL_PATH)
     
     print("Real Model Saved!")

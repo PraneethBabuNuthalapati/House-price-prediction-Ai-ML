@@ -1,23 +1,26 @@
 # Core ML
-pandas==3.0.2
-numpy==2.4.4
-scikit-learn==1.8.0
-xgboost==3.2.0
-joblib==1.5.3
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+xgboost==2.0.3
+joblib==1.4.2
 
 # Explainability
-shap==0.51.0
-matplotlib==3.10.8
+shap==0.44.1
+matplotlib==3.8.4
 
-# API
-fastapi==0.136.0
-uvicorn==0.44.0
-pydantic>=2.13.1,<3
+# Backend
+fastapi==0.110.0
+uvicorn==0.29.0
+
+# Frontend
+streamlit==1.33.0
+requests==2.31.0
+
+# Agent (FIXED)
+langchain==0.1.20
+langgraph==0.0.30
+langchain-groq==0.1.3
 
 # Utils
-python-dotenv==1.2.2
-groq==0.37.1
-
-langgraph==1.1.8
-langchain-core==1.3.0
-langchain-groq==1.1.2
+python-dotenv==1.0.1
